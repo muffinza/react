@@ -9,12 +9,14 @@ function App() {
   const deleteStudent = (id) => {
     setStudent(students.filter((e) => e.id !== id));
   };
+  const [show,setShow]=useState(true)
   return (
     <>
       <h1>State</h1>
       <h2>จำนวนนักเรียน {students.length}</h2>
+      <button onClick={()=>setShow(!show)}>สลับ</button>
       <ul>
-        {students.map((e) => (
+        {show && students.map((e) => (
           <li key={e.id}>
             <p>
               ID : {e.id} - Name : {e.name}
