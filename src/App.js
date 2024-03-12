@@ -14,7 +14,7 @@ function App() {
     <>
       <h1>State</h1>
       <h2>จำนวนนักเรียน {students.length}</h2>
-      <button onClick={()=>setShow(!show)}>สลับ</button>
+      <button onClick={()=>setShow(!show)}>สลับ </button>
       <ul>
         {show && students.map((e) => (
           <li key={e.id}>
