@@ -1,31 +1,24 @@
-import { useState } from "react";
+import logo from './logo.svg';
+import './App.css';
+
 function App() {
-  const [students, setStudent] = useState([
-    { id: 1, name: "mu" },
-    { id: 2, name: "wise" },
-    { id: 3, name: "sugar" },
-    { id: 4, name: "bebebie" },
-  ]);
-  const deleteStudent = (id) => {
-    setStudent(students.filter((e) => e.id !== id));
-  };
-  const [show,setShow]=useState(true)
   return (
-    <>
-      <h1>State</h1>
-      <h2>จำนวนนักเรียน {students.length}</h2>
-      <button onClick={()=>setShow(!show)}>สลับ </button>
-      <ul>
-        {show && students.map((e) => (
-          <li key={e.id}>
-            <p>
-              ID : {e.id} - Name : {e.name}
-            </p>
-            <button onClick={() => deleteStudent(e.id)}>delete!</button>
-          </li>
-        ))}
-      </ul>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
