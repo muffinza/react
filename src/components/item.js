@@ -5,7 +5,7 @@ export default function Item(props) {
     <>
       <li
         key={dataList.id}
-        style={{ color: dataList.species == "ไม่ระบุ" ? "red" : "green" }}
+        style={{ color: dataList.species === "ไม่ระบุ" ? "red" : "green" }}
       >
         <span>
           รหัส {dataList.id} : ชื่อ {dataList.name} สายพันธ์ :{" "}
