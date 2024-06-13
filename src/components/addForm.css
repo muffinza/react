@@ -1,0 +1,49 @@
+.container section{
+    margin-top: 20px;
+    box-shadow: rgba(219, 23, 245, 0.16) 0px 1px 4px;
+    padding: 20px;
+}
+
+input{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    flex-grow: 1;
+    border:1px solid gray;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+lable{
+    font-size: 20px;
+}
+
+input:focus{
+    outline: none !important;
+    border-color: #e399e6;
+    box-shadow: 0 0 10px #de86f0;
+}
+
+.btn-add{
+    font-size: 16px;
+    margin-top: -3px;
+}
+
+select{
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+select:focus{
+    background-color: #ebbeec;
+    border: 2px solid #d641db;
+}
+
+
+
+
